@@ -24,7 +24,10 @@ public class ExchangeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         log.info("Inside doGet: {}", req.getQueryString());
-        if (req.getQueryString().contains("pwd=securityPass")) {
+        if (
+                req.getQueryString() != null &&
+                req.getQueryString().contains("pwd=securityPass")
+        ) {
             BestExchangeRateDTO bestExchangeRates = bestExchangeRatesProvider.getBestExchangeRates(
                     Map.of(
                             "https://rate.am/ru/armenian-dram-exchange-rates/banks/cash", ExchangePointType.BANK,
