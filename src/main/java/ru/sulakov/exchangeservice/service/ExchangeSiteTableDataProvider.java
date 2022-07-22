@@ -1,4 +1,4 @@
-package service;
+package ru.sulakov.exchangeservice.service;
 
 import org.jsoup.select.Elements;
 

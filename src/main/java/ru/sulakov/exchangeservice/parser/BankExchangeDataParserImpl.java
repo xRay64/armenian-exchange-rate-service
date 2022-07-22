@@ -1,7 +1,7 @@
-package parser;
+package ru.sulakov.exchangeservice.parser;
 
-import model.ExchangePointData;
-import model.ExchangePointType;
+import ru.sulakov.exchangeservice.model.ExchangePointData;
+import ru.sulakov.exchangeservice.model.ExchangePointType;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.slf4j.Logger;

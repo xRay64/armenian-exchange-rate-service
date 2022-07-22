@@ -1,12 +1,12 @@
-package server;
+package ru.sulakov.exchangeservice.server;
 
 import com.google.gson.Gson;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-import service.BestExchangeRatesProvider;
-import servlet.ExchangeServlet;
+import ru.sulakov.exchangeservice.service.BestExchangeRatesProvider;
+import ru.sulakov.exchangeservice.servlet.ExchangeServlet;
 
 
 public class WebServerSimple implements WebServer {

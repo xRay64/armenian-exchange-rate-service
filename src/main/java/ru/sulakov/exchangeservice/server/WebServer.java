@@ -1,4 +1,4 @@
-package server;
+package ru.sulakov.exchangeservice.server;
 
 public interface WebServer {
     void start() throws Exception;

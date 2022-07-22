@@ -1,10 +1,10 @@
-package service;
+package ru.sulakov.exchangeservice.service;
 
-import dto.BestExchangeRateDTO;
+import ru.sulakov.exchangeservice.dto.BestExchangeRateDTO;
 import lombok.RequiredArgsConstructor;
-import model.ExchangePointData;
-import model.ExchangePointType;
-import parser.BankExchangeDataParser;
+import ru.sulakov.exchangeservice.model.ExchangePointData;
+import ru.sulakov.exchangeservice.model.ExchangePointType;
+import ru.sulakov.exchangeservice.parser.BankExchangeDataParser;
 
 import java.util.ArrayList;
 import java.util.List;

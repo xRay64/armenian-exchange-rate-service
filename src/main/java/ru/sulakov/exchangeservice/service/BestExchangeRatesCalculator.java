@@ -1,7 +1,7 @@
-package service;
+package ru.sulakov.exchangeservice.service;
 
-import dto.BestExchangeRateDTO;
-import model.ExchangePointData;
+import ru.sulakov.exchangeservice.dto.BestExchangeRateDTO;
+import ru.sulakov.exchangeservice.model.ExchangePointData;
 
 import java.util.List;
 

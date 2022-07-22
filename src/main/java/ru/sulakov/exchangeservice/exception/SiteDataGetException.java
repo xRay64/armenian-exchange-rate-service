@@ -1,4 +1,4 @@
-package exception;
+package ru.sulakov.exchangeservice.exception;
 
 public class SiteDataGetException extends RuntimeException {
     public SiteDataGetException() {

@@ -1,15 +1,15 @@
-package servlet;
+package ru.sulakov.exchangeservice.servlet;
 
 import com.google.gson.Gson;
-import dto.BestExchangeRateDTO;
+import ru.sulakov.exchangeservice.dto.BestExchangeRateDTO;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
-import model.ExchangePointType;
+import ru.sulakov.exchangeservice.service.BestExchangeRatesProvider;
+import ru.sulakov.exchangeservice.model.ExchangePointType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import service.BestExchangeRatesProvider;
 
 import java.io.IOException;
 import java.util.Map;
@@ -29,7 +29,7 @@ public class ExchangeServlet extends HttpServlet {
         ) {
             BestExchangeRateDTO bestExchangeRates = bestExchangeRatesProvider.getBestExchangeRates(
                     Map.of(
-                            "https://rate.am/ru/armenian-dram-exchange-rates/banks/cash", ExchangePointType.BANK,
+//                            "https://rate.am/ru/armenian-dram-exchange-rates/banks/cash", ExchangePointType.BANK,
                             "https://rate.am/ru/armenian-dram-exchange-rates/exchange-points/cash/corporate", ExchangePointType.EXCHANGE_OFFICE
                     )
             );

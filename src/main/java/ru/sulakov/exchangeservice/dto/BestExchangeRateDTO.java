@@ -1,7 +1,7 @@
-package dto;
+package ru.sulakov.exchangeservice.dto;
 
 import lombok.Getter;
-import model.ExchangePointData;
+import ru.sulakov.exchangeservice.model.ExchangePointData;
 
 @Getter
 public class BestExchangeRateDTO {

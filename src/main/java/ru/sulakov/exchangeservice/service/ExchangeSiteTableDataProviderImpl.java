@@ -1,6 +1,6 @@
-package service;
+package ru.sulakov.exchangeservice.service;
 
-import exception.SiteDataGetException;
+import ru.sulakov.exchangeservice.exception.SiteDataGetException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;

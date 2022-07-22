@@ -1,4 +1,4 @@
-package model;
+package ru.sulakov.exchangeservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

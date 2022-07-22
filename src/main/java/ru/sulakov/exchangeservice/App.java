@@ -1,10 +1,12 @@
+package ru.sulakov.exchangeservice;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import parser.BankExchangeDataParser;
-import parser.BankExchangeDataParserImpl;
-import server.WebServer;
-import server.WebServerSimple;
-import service.*;
+import ru.sulakov.exchangeservice.parser.BankExchangeDataParser;
+import ru.sulakov.exchangeservice.parser.BankExchangeDataParserImpl;
+import ru.sulakov.exchangeservice.server.WebServer;
+import ru.sulakov.exchangeservice.server.WebServerSimple;
+import ru.sulakov.exchangeservice.service.*;
 
 public class App {
     private static final int WEB_SERVER_PORT = 9900;
